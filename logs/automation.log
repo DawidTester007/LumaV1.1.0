@@ -1,0 +1,27 @@
+13:12:22.870 [main] INFO  testCases.TC_003_WalidacjaPoprawnejRejestracji - ****Uruchomiono stronę główną 'Luma'****
+13:12:22.874 [main] INFO  testCases.TC_003_WalidacjaPoprawnejRejestracji - **** Rozpoczęto TC_003_WalidacjaPoprawnejRejestracji ****
+13:12:23.196 [main] INFO  testCases.TC_003_WalidacjaPoprawnejRejestracji - **** Kliknięto przycisk 'utwórz konto' ****
+13:12:23.580 [main] INFO  testCases.TC_003_WalidacjaPoprawnejRejestracji - **** Wprowadzono dane do pól ****
+13:12:25.153 [main] INFO  testCases.TC_003_WalidacjaPoprawnejRejestracji - **** Kliknięto przycisk zarejestruj ****
+13:12:25.321 [main] INFO  testCases.TC_003_WalidacjaPoprawnejRejestracji - **** Użytkownik został zarejestrowany ****
+13:12:25.321 [main] INFO  testCases.TC_003_WalidacjaPoprawnejRejestracji - **** TC_003_WalidacjaPoprawnejRejestracji zakończył się powodzeniem ****
+13:12:28.709 [main] INFO  testCases.TC_005_WalidacjaNazwyStronyWhatsNew - ****Uruchomiono stronę główną 'Luma'****
+13:12:28.710 [main] INFO  testCases.TC_005_WalidacjaNazwyStronyWhatsNew - ****Uruchomiono TC_005_WalidacjaNazwyStronyWhatsNew****
+13:12:29.286 [main] INFO  testCases.TC_005_WalidacjaNazwyStronyWhatsNew - ****Kliknięto kategorię 'WhatsNew'****
+13:12:29.317 [main] INFO  testCases.TC_005_WalidacjaNazwyStronyWhatsNew - ****Nazwa strony została wyświetlona ****
+13:12:29.317 [main] INFO  testCases.TC_005_WalidacjaNazwyStronyWhatsNew - ****TC_005_WalidacjaNazwyStronyWhatsNew zakończył się powodzeniem****
+13:12:32.594 [main] INFO  testCases.TC_200_WalidacjaCheckBoxZdalnyAsystent_MyAccountPage - ****Uruchomiono stronę główną 'Luma'****
+13:12:32.820 [main] INFO  testCases.TC_200_WalidacjaCheckBoxZdalnyAsystent_MyAccountPage - ****Kliknięto przycisk zaloguj się****
+13:12:33.027 [main] INFO  testCases.TC_200_WalidacjaCheckBoxZdalnyAsystent_MyAccountPage - ****Wprowadzono email i hasło****
+13:12:33.730 [main] INFO  testCases.TC_200_WalidacjaCheckBoxZdalnyAsystent_MyAccountPage - ****Kliknięto przycisk zaloguj****
+13:12:34.034 [main] INFO  testCases.TC_200_WalidacjaCheckBoxZdalnyAsystent_MyAccountPage - ****Kliknięto przycisk 'Moje konto'****
+13:12:34.508 [main] INFO  testCases.TC_200_WalidacjaCheckBoxZdalnyAsystent_MyAccountPage - ****Kliknięto zakładkę Dane konta****
+13:12:34.626 [main] INFO  testCases.TC_200_WalidacjaCheckBoxZdalnyAsystent_MyAccountPage - ****Zaznaczono checkBox Allow remote shopping assistance****
+13:12:34.658 [main] INFO  testCases.TC_200_WalidacjaCheckBoxZdalnyAsystent_MyAccountPage - ****CheckBox poprawnie został zaznaczony****
+13:12:34.658 [main] INFO  testCases.TC_200_WalidacjaCheckBoxZdalnyAsystent_MyAccountPage - ****TC_200_WalidacjaCheckBoxZdalnyAsystent_MyAccountPage zakończono powodzeniem****
+13:12:38.001 [main] INFO  testCases.TC_204_WalidacjaFunkcjonalnościDropDownSelektor_Nazwa_Tops_M - ****Uruchomiono stronę główną 'Luma'****
+13:12:38.002 [main] INFO  testCases.TC_204_WalidacjaFunkcjonalnościDropDownSelektor_Nazwa_Tops_M - ****Rozpoczęto TC_204_WalidacjaFunkcjonalnościDropDownSelektor_Nazwa_Tops_M****
+13:12:38.388 [main] INFO  testCases.TC_204_WalidacjaFunkcjonalnościDropDownSelektor_Nazwa_Tops_M - ****Kliknięto kategorię Men ----> Tops****
+13:12:38.896 [main] INFO  testCases.TC_204_WalidacjaFunkcjonalnościDropDownSelektor_Nazwa_Tops_M - ****Wybrano sortowanie według nazwy****
+13:12:39.036 [main] INFO  testCases.TC_204_WalidacjaFunkcjonalnościDropDownSelektor_Nazwa_Tops_M - ****Produkty posortowane są według nazwy****
+13:12:39.036 [main] INFO  testCases.TC_204_WalidacjaFunkcjonalnościDropDownSelektor_Nazwa_Tops_M - ****TC_204_WalidacjaFunkcjonalnościDropDownSelektor_Nazwa_Tops_M zakończono powodzeniem****
