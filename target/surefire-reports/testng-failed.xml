@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Master]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="system" value="Windows 11"/>
+  <parameter name="browser" value="edge"/>
+  <listeners>
+    <listener class-name="utilities.ExtentReportsManager"/>
+  </listeners>
+  <test thread-count="5" name="masterTest(failed)" verbose="0">
+    <groups>
+      <run>
+        <include name="master"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testCases.TC_028_WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F">
+        <methods>
+          <include name="setUp"/>
+          <include name="WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- testCases.TC_028_WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F -->
+    </classes>
+  </test> <!-- masterTest(failed) -->
+</suite> <!-- Failed suite [Master] -->

@@ -1,0 +1,63 @@
+package testCases;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import baseTest.BaseTest;
+import pages.MainPage;
+import pages.MyAccountPage;
+import pages.ProductPage;
+
+public class TC_187_WalidacjaWyświetlaniaProduktówWLiścieŻyczeń_MyAccountPage extends BaseTest {
+	@Test(groups = {"functional","regression","master"})
+	public void WalidacjaWyświetlaniaProduktówWLiścieŻyczeń_MyAccountPage() {
+		
+		try {
+			logger.info("****Rozpoczęto TC_187_WalidacjaWyświetlaniaProduktówWLiścieŻyczeń_MyAccountPage****");
+			BaseTest Bt = new BaseTest();
+			Bt.LoginToVeronicaAccount();
+			MyAccountPage Map = new MyAccountPage(driver);
+			MainPage Mp = new MainPage(driver);
+			Mp.click_logo();
+			logger.info("****Kliknięto logo strony****");
+			Mp.List_ImgProductOf_HSeller().get(0).click();
+			logger.info("****Kliknięto obraz pierwszego produktu z Hotseller****");
+			ProductPage Pp = new ProductPage(driver);
+			Pp.click_btn_toWishList();
+			logger.info("****Kliknięto przycisk dodaj do listy życzeń****");
+			Mp.click_btn_mojeKonto();
+			logger.info("****Kliknięto przycisk 'Moje konto'****");
+			Map.click_tab_WishList();
+			logger.info("****Kliknięto zakładkę Moja lista życzeń****");
+			
+			if(Map.check_firstProduct_MyWishList()) {
+				
+				logger.info("****Dodany produkt został poprawnie wyświetlony w 'Moja lista życzeń'****");
+				Map.click_btn_deleteProuctFromWishList();
+				logger.info("****Usunięto produkt z listy życzeń****");
+				logger.info("****TC_187_WalidacjaWyświetlaniaProduktówWLiścieŻyczeń_MyAccountPage zakończono powodzeniem****");
+				Assert.assertTrue(true);
+				
+			}else {
+				
+				logger.error("****Dodany produkt został niepoprawnie wyświetlony w 'Moja lista życzeń'****");
+				logger.info("****TC_187_WalidacjaWyświetlaniaProduktówWLiścieŻyczeń_MyAccountPage zakończono niepowodzeniem****");
+				Assert.fail();
+				
+			}
+			
+			
+			
+			
+			
+			
+	}catch(Exception e) {
+				
+				logger.error("**** Podczas testu rzucony został wyjątek:"+ e.getMessage()+" ****");
+				Assert.fail();
+			
+			}
+		
+	}
+	
+}

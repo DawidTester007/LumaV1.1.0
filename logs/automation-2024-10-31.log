@@ -1,0 +1,40 @@
+06:29:49.663 [main] INFO  testCases.TC_207_WalidacjaOpcjiWStyle_TopsPage_M - ****Kliknięto opcję : Style****
+06:29:49.688 [main] INFO  testCases.TC_207_WalidacjaOpcjiWStyle_TopsPage_M - ****Kliknięto opcje : Full Zip 5
+produkt w stylach****
+06:29:50.176 [main] INFO  testCases.TC_207_WalidacjaOpcjiWStyle_TopsPage_M - ****Pojawił się komunikat o poprawnym wybraniu stylu****
+06:29:50.365 [main] INFO  testCases.TC_207_WalidacjaOpcjiWStyle_TopsPage_M - ****Kliknięto przycisk wyczyść wszystko****
+06:29:50.469 [main] INFO  testCases.TC_207_WalidacjaOpcjiWStyle_TopsPage_M - ****Kliknięto opcję : Style****
+06:29:50.496 [main] INFO  testCases.TC_207_WalidacjaOpcjiWStyle_TopsPage_M - ****Kliknięto opcje : Reversible 1
+produkt w stylach****
+06:29:50.885 [main] INFO  testCases.TC_207_WalidacjaOpcjiWStyle_TopsPage_M - ****Pojawił się komunikat o poprawnym wybraniu stylu****
+06:29:51.044 [main] INFO  testCases.TC_207_WalidacjaOpcjiWStyle_TopsPage_M - ****Kliknięto przycisk wyczyść wszystko****
+06:29:51.175 [main] INFO  testCases.TC_207_WalidacjaOpcjiWStyle_TopsPage_M - ****Kliknięto opcję : Style****
+06:29:51.208 [main] INFO  testCases.TC_207_WalidacjaOpcjiWStyle_TopsPage_M - ****Kliknięto opcje : Tank 12
+produkt w stylach****
+06:29:51.796 [main] INFO  testCases.TC_207_WalidacjaOpcjiWStyle_TopsPage_M - ****Pojawił się komunikat o poprawnym wybraniu stylu****
+06:29:51.937 [main] INFO  testCases.TC_207_WalidacjaOpcjiWStyle_TopsPage_M - ****Kliknięto przycisk wyczyść wszystko****
+06:29:52.072 [main] INFO  testCases.TC_207_WalidacjaOpcjiWStyle_TopsPage_M - ****Kliknięto opcję : Style****
+06:29:52.106 [main] INFO  testCases.TC_207_WalidacjaOpcjiWStyle_TopsPage_M - ****Kliknięto opcje : Tee 12
+produkt w stylach****
+06:29:52.622 [main] INFO  testCases.TC_207_WalidacjaOpcjiWStyle_TopsPage_M - ****Pojawił się komunikat o poprawnym wybraniu stylu****
+06:29:52.808 [main] INFO  testCases.TC_207_WalidacjaOpcjiWStyle_TopsPage_M - ****Kliknięto przycisk wyczyść wszystko****
+06:29:52.808 [main] INFO  testCases.TC_207_WalidacjaOpcjiWStyle_TopsPage_M - ****Wszystkie opcje w stylach zostały poprawnie wybrane****
+06:29:52.808 [main] INFO  testCases.TC_207_WalidacjaOpcjiWStyle_TopsPage_M - ****TC_207_WalidacjaOpcjiWStyle_TopsPage_M zakończono powodzeniem****
+06:50:05.292 [main] INFO  testCases.TC_007_WalidacjaNazwyStrony_Hoodies_WhatsNew_F - ****Uruchomiono stronę główną 'Luma'****
+06:50:05.312 [main] INFO  testCases.TC_007_WalidacjaNazwyStrony_Hoodies_WhatsNew_F - **** Rozpoczęto TC_007_WalidacjaNazwyStrony_Hoodies_WhatsNew_F **** 
+06:50:05.933 [main] INFO  testCases.TC_007_WalidacjaNazwyStrony_Hoodies_WhatsNew_F - **** Kliknięto kategorię 'Whats New' ****
+06:50:06.506 [main] INFO  testCases.TC_007_WalidacjaNazwyStrony_Hoodies_WhatsNew_F - **** Kliknięto podkategorię u kobiet 'Hoodies & Sweatshirts' ****
+06:50:06.642 [main] INFO  testCases.TC_007_WalidacjaNazwyStrony_Hoodies_WhatsNew_F - **** Nazwa strony jest poprawna ****
+06:50:06.642 [main] INFO  testCases.TC_007_WalidacjaNazwyStrony_Hoodies_WhatsNew_F - **** TC_007_WalidacjaNazwyStrony_Hoodies_WhatsNew_F zakończył się powodzeniem ****
+10:25:28.170 [main] INFO  testCases.TC_007_WalidacjaNazwyStrony_Hoodies_WhatsNew_F - ****Uruchomiono stronę główną 'Luma'****
+10:25:28.197 [main] INFO  testCases.TC_007_WalidacjaNazwyStrony_Hoodies_WhatsNew_F - **** Rozpoczęto TC_007_WalidacjaNazwyStrony_Hoodies_WhatsNew_F **** 
+10:25:38.912 [main] INFO  testCases.TC_007_WalidacjaNazwyStrony_Hoodies_WhatsNew_F - **** Kliknięto kategorię 'Whats New' ****
+10:25:38.924 [main] ERROR testCases.TC_007_WalidacjaNazwyStrony_Hoodies_WhatsNew_F - **** Podczas testu rzucony został wyjątek:no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=130.0.2849.56)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [05c55943c8a749d4515f9183953335cb, findElement {using=xpath, value=//main[@id='maincontent']//ul[1]//li[1]//a[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 130.0.2849.56, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50407}, msedge: {msedgedriverVersion: 130.0.2849.56 (85245383cd01..., userDataDir: C:\Users\dawid\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50407/devtoo..., se:cdpVersion: 130.0.2849.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 05c55943c8a749d4515f9183953335cb ****

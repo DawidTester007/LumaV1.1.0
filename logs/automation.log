@@ -1,0 +1,7 @@
+16:12:08.913 [main] INFO  testCases.TC_028_WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F - **** Nazwa strony jest poprawna ****
+16:12:08.917 [main] INFO  testCases.TC_028_WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F - ****TC_028_WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F zakończył się powodzeniem****
+16:23:21.778 [main] INFO  testCases.TC_028_WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F - ****Uruchomiono stronę główną 'Luma'****
+16:23:21.782 [main] INFO  testCases.TC_028_WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F - ****Rozpoczęto TC_028_WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F ****
+16:23:23.559 [main] INFO  testCases.TC_028_WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F - **** Kliknięto przycisk 'Hoodies & Sweatshirts' w kategorii 'Women' w menu ****
+16:23:23.595 [main] INFO  testCases.TC_028_WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F - **** Nazwa strony jest poprawna ****
+16:23:23.595 [main] INFO  testCases.TC_028_WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F - ****TC_028_WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F zakończył się powodzeniem****

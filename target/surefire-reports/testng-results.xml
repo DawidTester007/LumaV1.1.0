@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-01T16:23:15 CET" name="Master" finished-at="2024-11-01T16:23:29 CET" duration-ms="14121">
+    <groups>
+      <group name="functional">
+        <method signature="TC_028_WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F.WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F()[pri:0, instance:testCases.TC_028_WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F@4550bb58]" name="WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F" class="testCases.TC_028_WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F"/>
+      </group> <!-- functional -->
+      <group name="master">
+        <method signature="TC_028_WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F.WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F()[pri:0, instance:testCases.TC_028_WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F@4550bb58]" name="WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F" class="testCases.TC_028_WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F"/>
+      </group> <!-- master -->
+    </groups>
+    <test started-at="2024-11-01T16:23:15 CET" name="masterTest" finished-at="2024-11-01T16:23:29 CET" duration-ms="14121">
+      <class name="testCases.TC_028_WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_028_WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F@4550bb58]" started-at="2024-11-01T16:23:15 CET" name="setUp" finished-at="2024-11-01T16:23:21 CET" duration-ms="5806" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows 11]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F()[pri:0, instance:testCases.TC_028_WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F@4550bb58]" started-at="2024-11-01T16:23:21 CET" name="WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F" finished-at="2024-11-01T16:23:23 CET" duration-ms="1814" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testCases.TC_028_WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F@4550bb58]" started-at="2024-11-01T16:23:23 CET" name="close" finished-at="2024-11-01T16:23:29 CET" duration-ms="6342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testCases.TC_028_WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F -->
+    </test> <!-- masterTest -->
+  </suite> <!-- Master -->
+</testng-results>
