@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-02T13:12:17 CET" name="groups" finished-at="2024-11-02T13:12:39 CET" duration-ms="21674">
+  <suite started-at="2024-11-03T11:27:49 CET" name="groups" finished-at="2024-11-03T11:28:10 CET" duration-ms="20182">
     <groups>
       <group name="functional">
         <method signature="TC_005_WalidacjaNazwyStronyWhatsNew.WalidacjaNazwyStronyWhatsNew()[pri:0, instance:testCases.TC_005_WalidacjaNazwyStronyWhatsNew@3e694b3f]" name="WalidacjaNazwyStronyWhatsNew" class="testCases.TC_005_WalidacjaNazwyStronyWhatsNew"/>
@@ -23,9 +23,9 @@
         <method signature="TC_204_WalidacjaFunkcjonalnościDropDownSelektor_Nazwa_Tops_M.WalidacjaFunkcjonalnościDropDownSelektor_Nazwa_Tops_M()[pri:0, instance:testCases.TC_204_WalidacjaFunkcjonalnościDropDownSelektor_Nazwa_Tops_M@78691363]" name="WalidacjaFunkcjonalnościDropDownSelektor_Nazwa_Tops_M" class="testCases.TC_204_WalidacjaFunkcjonalnościDropDownSelektor_Nazwa_Tops_M"/>
       </group> <!-- master -->
     </groups>
-    <test started-at="2024-11-02T13:12:17 CET" name="groupTest" finished-at="2024-11-02T13:12:39 CET" duration-ms="21674">
+    <test started-at="2024-11-03T11:27:49 CET" name="groupTest" finished-at="2024-11-03T11:28:10 CET" duration-ms="20182">
       <class name="testCases.TC_005_WalidacjaNazwyStronyWhatsNew">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_005_WalidacjaNazwyStronyWhatsNew@3e694b3f]" started-at="2024-11-02T13:12:25 CET" name="setUp" finished-at="2024-11-02T13:12:28 CET" duration-ms="3250" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_005_WalidacjaNazwyStronyWhatsNew@3e694b3f]" started-at="2024-11-03T11:27:56 CET" name="setUp" finished-at="2024-11-03T11:27:59 CET" duration-ms="3389" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,17 +41,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="WalidacjaNazwyStronyWhatsNew()[pri:0, instance:testCases.TC_005_WalidacjaNazwyStronyWhatsNew@3e694b3f]" started-at="2024-11-02T13:12:28 CET" name="WalidacjaNazwyStronyWhatsNew" finished-at="2024-11-02T13:12:29 CET" duration-ms="608" status="PASS">
+        <test-method signature="WalidacjaNazwyStronyWhatsNew()[pri:0, instance:testCases.TC_005_WalidacjaNazwyStronyWhatsNew@3e694b3f]" started-at="2024-11-03T11:27:59 CET" name="WalidacjaNazwyStronyWhatsNew" finished-at="2024-11-03T11:28:00 CET" duration-ms="475" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WalidacjaNazwyStronyWhatsNew -->
-        <test-method is-config="true" signature="close()[pri:0, instance:testCases.TC_005_WalidacjaNazwyStronyWhatsNew@3e694b3f]" started-at="2024-11-02T13:12:29 CET" name="close" finished-at="2024-11-02T13:12:29 CET" duration-ms="119" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:testCases.TC_005_WalidacjaNazwyStronyWhatsNew@3e694b3f]" started-at="2024-11-03T11:28:00 CET" name="close" finished-at="2024-11-03T11:28:00 CET" duration-ms="135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- testCases.TC_005_WalidacjaNazwyStronyWhatsNew -->
       <class name="testCases.TC_003_WalidacjaPoprawnejRejestracji">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_003_WalidacjaPoprawnejRejestracji@4efbca5a]" started-at="2024-11-02T13:12:17 CET" name="setUp" finished-at="2024-11-02T13:12:22 CET" duration-ms="5209" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_003_WalidacjaPoprawnejRejestracji@4efbca5a]" started-at="2024-11-03T11:27:50 CET" name="setUp" finished-at="2024-11-03T11:27:54 CET" duration-ms="3952" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -67,17 +67,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="WalidacjaPoprawnejRejestracji()[pri:0, instance:testCases.TC_003_WalidacjaPoprawnejRejestracji@4efbca5a]" started-at="2024-11-02T13:12:22 CET" name="WalidacjaPoprawnejRejestracji" finished-at="2024-11-02T13:12:25 CET" duration-ms="2448" status="PASS">
+        <test-method signature="WalidacjaPoprawnejRejestracji()[pri:0, instance:testCases.TC_003_WalidacjaPoprawnejRejestracji@4efbca5a]" started-at="2024-11-03T11:27:54 CET" name="WalidacjaPoprawnejRejestracji" finished-at="2024-11-03T11:27:56 CET" duration-ms="2448" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WalidacjaPoprawnejRejestracji -->
-        <test-method is-config="true" signature="close()[pri:0, instance:testCases.TC_003_WalidacjaPoprawnejRejestracji@4efbca5a]" started-at="2024-11-02T13:12:25 CET" name="close" finished-at="2024-11-02T13:12:25 CET" duration-ms="129" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:testCases.TC_003_WalidacjaPoprawnejRejestracji@4efbca5a]" started-at="2024-11-03T11:27:56 CET" name="close" finished-at="2024-11-03T11:27:56 CET" duration-ms="47" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- testCases.TC_003_WalidacjaPoprawnejRejestracji -->
       <class name="testCases.TC_204_WalidacjaFunkcjonalnościDropDownSelektor_Nazwa_Tops_M">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_204_WalidacjaFunkcjonalnościDropDownSelektor_Nazwa_Tops_M@78691363]" started-at="2024-11-02T13:12:34 CET" name="setUp" finished-at="2024-11-02T13:12:38 CET" duration-ms="3215" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_204_WalidacjaFunkcjonalnościDropDownSelektor_Nazwa_Tops_M@78691363]" started-at="2024-11-03T11:28:05 CET" name="setUp" finished-at="2024-11-03T11:28:09 CET" duration-ms="3297" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -93,17 +93,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="WalidacjaFunkcjonalnościDropDownSelektor_Nazwa_Tops_M()[pri:0, instance:testCases.TC_204_WalidacjaFunkcjonalnościDropDownSelektor_Nazwa_Tops_M@78691363]" started-at="2024-11-02T13:12:38 CET" name="WalidacjaFunkcjonalnościDropDownSelektor_Nazwa_Tops_M" finished-at="2024-11-02T13:12:39 CET" duration-ms="1035" status="PASS">
+        <test-method signature="WalidacjaFunkcjonalnościDropDownSelektor_Nazwa_Tops_M()[pri:0, instance:testCases.TC_204_WalidacjaFunkcjonalnościDropDownSelektor_Nazwa_Tops_M@78691363]" started-at="2024-11-03T11:28:09 CET" name="WalidacjaFunkcjonalnościDropDownSelektor_Nazwa_Tops_M" finished-at="2024-11-03T11:28:10 CET" duration-ms="874" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WalidacjaFunkcjonalnościDropDownSelektor_Nazwa_Tops_M -->
-        <test-method is-config="true" signature="close()[pri:0, instance:testCases.TC_204_WalidacjaFunkcjonalnościDropDownSelektor_Nazwa_Tops_M@78691363]" started-at="2024-11-02T13:12:39 CET" name="close" finished-at="2024-11-02T13:12:39 CET" duration-ms="130" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:testCases.TC_204_WalidacjaFunkcjonalnościDropDownSelektor_Nazwa_Tops_M@78691363]" started-at="2024-11-03T11:28:10 CET" name="close" finished-at="2024-11-03T11:28:10 CET" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- testCases.TC_204_WalidacjaFunkcjonalnościDropDownSelektor_Nazwa_Tops_M -->
       <class name="testCases.TC_200_WalidacjaCheckBoxZdalnyAsystent_MyAccountPage">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_200_WalidacjaCheckBoxZdalnyAsystent_MyAccountPage@1bb5a082]" started-at="2024-11-02T13:12:29 CET" name="setUp" finished-at="2024-11-02T13:12:32 CET" duration-ms="3156" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_200_WalidacjaCheckBoxZdalnyAsystent_MyAccountPage@1bb5a082]" started-at="2024-11-03T11:28:00 CET" name="setUp" finished-at="2024-11-03T11:28:03 CET" duration-ms="3351" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -119,11 +119,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="WalidacjaCheckBoxZdalnyAsystent_MyAccountPage()[pri:0, instance:testCases.TC_200_WalidacjaCheckBoxZdalnyAsystent_MyAccountPage@1bb5a082]" started-at="2024-11-02T13:12:32 CET" name="WalidacjaCheckBoxZdalnyAsystent_MyAccountPage" finished-at="2024-11-02T13:12:34 CET" duration-ms="2064" status="PASS">
+        <test-method signature="WalidacjaCheckBoxZdalnyAsystent_MyAccountPage()[pri:0, instance:testCases.TC_200_WalidacjaCheckBoxZdalnyAsystent_MyAccountPage@1bb5a082]" started-at="2024-11-03T11:28:03 CET" name="WalidacjaCheckBoxZdalnyAsystent_MyAccountPage" finished-at="2024-11-03T11:28:05 CET" duration-ms="1794" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WalidacjaCheckBoxZdalnyAsystent_MyAccountPage -->
-        <test-method is-config="true" signature="close()[pri:0, instance:testCases.TC_200_WalidacjaCheckBoxZdalnyAsystent_MyAccountPage@1bb5a082]" started-at="2024-11-02T13:12:34 CET" name="close" finished-at="2024-11-02T13:12:34 CET" duration-ms="126" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:testCases.TC_200_WalidacjaCheckBoxZdalnyAsystent_MyAccountPage@1bb5a082]" started-at="2024-11-03T11:28:05 CET" name="close" finished-at="2024-11-03T11:28:05 CET" duration-ms="128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
