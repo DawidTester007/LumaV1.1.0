@@ -19,7 +19,7 @@
 	
 	
 	<parameter name="system" value = "Windows 11"/>
-	<parameter name="browser" value = "edge"/>
+	<parameter name="browser" value = "chrome"/>
 	
 	
   <test name="groupTest">

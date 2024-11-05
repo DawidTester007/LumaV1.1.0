@@ -1,0 +1,6 @@
+12:07:56.956 [main] INFO  testCases.TC_002_WalidacjaNiepoprawnejRejestracji_TDD - ****Uruchomiono stronę główną 'Luma'****
+12:07:56.962 [main] INFO  testCases.TC_002_WalidacjaNiepoprawnejRejestracji_TDD - **** Rozpoczęto test TC_002_WalidacjaRejestracji_TDD ****
+12:07:57.267 [main] INFO  testCases.TC_002_WalidacjaNiepoprawnejRejestracji_TDD - **** Kliknięto przycisk 'utwórz konto' ****
+12:07:57.531 [main] INFO  testCases.TC_002_WalidacjaNiepoprawnejRejestracji_TDD - **** Wprowadzono dane do pól****
+12:07:57.575 [main] INFO  testCases.TC_002_WalidacjaNiepoprawnejRejestracji_TDD - **** Kliknięto przycisk 'zarejestruj' ****
+12:07:57.576 [main] INFO  testCases.TC_002_WalidacjaNiepoprawnejRejestracji_TDD - **** Wprowadzone dane powinny spowodować nie zarejestrowanie użytkownika ****
