@@ -1,0 +1,105 @@
+Projekt automatyzacji LumaV1.1.0
+
+Czego dotyczy:
+Strona pod adresem **https://demo-magento-2.auroracreation.com** to demonstracyjna wersja sklepu internetowego opartego na platformie **Magento 2**.  Została stworzona przez firmę **Aurora Creation**, która specjalizuje się w wdrażaniu, migracji i obsłudze platformy Magento.  Na stronie możesz zobaczyć przykładowe funkcje sklepu, takie jak dodawanie produktów do koszyka, przeglądanie kategorii, a także korzystanie z różnych narzędzi do zarządzania sklepem.  Strona ta ma na celu zaprezentowanie możliwości platformy Magento 2 i zachęcenie potencjalnych klientów do skorzystania z usług firmy Aurora Creation.
+
+Najważniejsze lokalizacje:
+Kod wykonujący przypadki testowe znajduję się w " \LumaV1.1.0\src\test\java\testCases
+Wszystkie logi(czynności wykonane przez sterownik) są generowane w : \LumaV1.1.0\logs
+Raporty z testów generowane są w: \LumaV1.1.0\reports
+Screenshoty z testów generowane są w  \LumaV1.1.0\screenshots
+Dane testowe wykorzystywane w testach oznaczonymi skrótami TDD : \LumaV1.1.0\testData\DataForLuma.xlsx
+
+Wyjaśnienie składni nazw przypadków testowych:
+TC_016_WalidacjaNazwyStrony_Tees_WhatsNew_M --> 
+TC : skrót testcase
+016 : numer testu/ identyfikator
+WalidacjaNazwyStrony : główne zadanie testu
+Tees_WhatsNew : Zakładka w której znajduję się test
+M : Dotyczą męskiego działy
+F : Dotyczą żeńskiego działu
+
+
+
+
+Jaki jest cel projektu ?
+
+Celem projektu jest automatyzacja testów funkcjonalnych dla strony internetowej https://demo-magento-2.auroracreation.com. Projekt ten obejmuje 220 testów przypadków, które mogą być uruchamiana na przeglądarkach takich jak: edge, chrome, firefox, które mają na celu weryfikację poprawności działania kluczowych funkcji strony w różnych środowiskach:
+
+Dodawanie produktów do koszyka
+Przeglądanie kategorii
+Rejestracja i logowanie
+Proces zamawiania
+Obsługa klienta i wiele wiele innych funkcji.
+
+Automatyzacja testów pozwala na szybkie i efektywne wykrywanie błędów w oprogramowaniu oraz generowanie przejrzystych raportów dotyczących wyników testu, co z kolei skraca czas rozwoju i poprawia jakość strony internetowej. Dodatkowo, regularne uruchamianie testów automatycznych zapewnia ciągłe monitorowanie stabilności i funkcjonalności strony.
+
+Jak uruchomić projekt ?
+
+Aby uruchomić projekt należy go pobrać i rozpakować, następnie aby uruchomić testy należy uruchomić plik : "run.bat".
+W celu poprawnego uruchomienia testów należy pobrać plik maven, który umożliwi wykonanie komendy, która jest zawarta w pliku "run.bat"
+Po uruchomieniu pliku run.bat zostaną wykonane przypadki testowe, niektóre zostaną uruchomione kilku krotnie ponieważ będą pobierać dane z różnymi kombinacjami danych z pliku DataForLuma.xml
+
+W przypadku, niechęci uruchomienia wszystkich przypadków testowych można uruchomić tylko przypadki testowe, które należą do poszczególnych grup takich jak:
+groups ={"functional","regression","sanity","master","dataDriver"}
+
+Kroki do uruchomienia poszczególnych testów:
+
+1.Uruchom plik pom.xml
+2.Zlokalizuj instrukcję:
+<suiteXmlFiles>	
+	<suiteXmlFile>master.xml</suiteXmlFile>
+</suiteXmlFiles>
+3.Zmień nazwę pliku zamiast : master.xml na groups.xml
+4.Otwórz plik groups.xml
+5.Zlokalizuj Tag groups --> run --> include
+6.Usuń komentarz z grupy, którą chcesz uruchomić
+7.Zapisz plik
+8.Uruchom plik run.bat
+
+Oczekiwane rezultaty:
+Uruchomienie testów należących do wybranej grupy
+
+Jak uruchomić projekt na różnych przeglądarkach ?
+ 
+Dostępne są trzy przeglądarki : Microsoft Edge, chrome, firefox
+ 
+Plik master.xml oraz groups.xml zawierają parametr : <parameter name="browser" value = "chrome"/>
+Aby uruchomić plik na wybranej z trzech przeglądarek należy w "value" wprowadzić jedną z trzech wartości:
+edge, chrome, firefox. Każda inna wartość zostanie odrzucona i wyświetli się komunikat: "Wprowadzono złą wartość przeglądarki"
+
+Jak uruchomić testy na trzech przeglądarkach jednocześnie?
+Aby uruchomić testy na wszystkich z wyżej wymienionych przeglądarkach należy:
+1.Otworzyć plik pom.xml
+2.Zlokalizuj instrukcję:
+<suiteXmlFiles>	
+	<suiteXmlFile>master.xml</suiteXmlFile>
+</suiteXmlFiles>
+3.Zmień nazwę pliku zamiast : master.xml na crossBrowser.xml
+4.Zapisz zmiany
+5.Uruchom plik run.bat
+
+Oczekiwane rezultaty:
+Uruchomienie wszystkich zawartych testów w pliku crossBrowser.xml na trzech przeglądarkach
+
+Uwaga: Uruchomienie testów na słabym sprzęcie może spowodować niepoprawne działanie testów
+
+Jak mogę zobaczyć szczegóły wykonywanych testów ?
+
+W lokalizacji : LumaV1.1.0\src\test\java\testCases znajdują się wszystkie przypadki testowe. 
+Po otworzeniu pliku np: TC_016_WalidacjaNazwyStrony_Tees_WhatsNew_M.java zostanie wyświetlony kod źródłowy testu.
+
+W jaki sposób mogę przejrzeć wykonane kroki testowe ?
+
+Za każdym razem gdy zostaną uruchomione testy będą generowane czynności, które zostały wykonane na stronie. Będą one zapisywane w lokalizacji: 
+LumaV1.1.0\logs
+
+Jak przejrzeć raporty wykonanych testów ?
+Wszystkie raporty będą generowane wraz z screenchotami w lokalizacji:\LumaV1.1.0\reports w formacie html
+Wszystkie screenshoty będą generowane w lokalizacji : LumaV1.1.0\screenshots w formacie png
+
+Środowisko w którym powstawał projekt :
+Eclipse, Język java, Selenium WebDriver, TestNg, Program Maven, Udostępniony za pomocą git na platformę github, chrome, firefox, edge, Windows 11
+
+
+

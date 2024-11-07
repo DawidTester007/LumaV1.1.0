@@ -8,14 +8,14 @@ import pages.MainPage;
 import pages.ProductPage;
 import utilities.DataProv;
 
-public class TC_081_WalidacjaKomuniaktówTworzeniaKomentarza_ProductPage extends BaseTest {
+public class TC_081_WalidacjaKomuniaktówTworzeniaKomentarza_ProductPage_TDD extends BaseTest {
 
 	
 	@Test(dataProvider ="InvalidDataWriteComment", dataProviderClass = DataProv.class , groups ={"dataDriver","master"})
 	public void WalidacjaKomuniaktówTworzeniaKomentarza_ProductPage(String rating, String nick, String summary, String opinion , String res)  {
 		try {
 		MainPage Mp = new MainPage(driver);
-		logger.info("**** Rozpoczęto TC_081_WalidacjaKomuniaktówTworzeniaKomentarza_ProductPage ****");
+		logger.info("**** Rozpoczęto TC_081_WalidacjaKomuniaktówTworzeniaKomentarza_ProductPage_TDD ****");
 		Mp.List_ImgProductOf_HSeller().get(0).click();
 		logger.info("**** Kliknięto zdjęcie produktu ****");
 		ProductPage Pp = new ProductPage(driver);

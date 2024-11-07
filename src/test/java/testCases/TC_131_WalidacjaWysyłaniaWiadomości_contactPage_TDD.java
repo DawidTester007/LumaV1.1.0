@@ -9,11 +9,11 @@ import pages.FooterPage;
 import utilities.DataProv;
 
 
-public class TC_131_WalidacjaWysyłaniaWiadomości_contactPage extends BaseTest {
+public class TC_131_WalidacjaWysyłaniaWiadomości_contactPage_TDD extends BaseTest {
 
 @Test(groups = {"dataDriver","master"} , dataProvider = "DataContact" , dataProviderClass = DataProv.class)
 	
-	public void WalidacjaWysyłaniaWiadomości_contactPage(String name, String email, String number, String comment, String res) {
+	public void WalidacjaWysyłaniaWiadomości_contactPage_TDD(String name, String email, String number, String comment, String res) {
 		try {
 		logger.info("****Rozpoczęto TC_131_WalidacjaWysyłaniaWiadomości_contactPage ****");
 		

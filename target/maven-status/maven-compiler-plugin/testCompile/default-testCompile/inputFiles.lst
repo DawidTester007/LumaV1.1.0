@@ -127,7 +127,7 @@ C:\Program Files\SelenAutoTestsTraining\LumaV1.1.0\src\test\java\testCases\TC_07
 C:\Program Files\SelenAutoTestsTraining\LumaV1.1.0\src\test\java\testCases\TC_078_WalidacjaKlikalnościTekstDodajOpinie_ProductPage.java
 C:\Program Files\SelenAutoTestsTraining\LumaV1.1.0\src\test\java\testCases\TC_079_WalidacjaTekstuOpinieKlientów_ProductPage.java
 C:\Program Files\SelenAutoTestsTraining\LumaV1.1.0\src\test\java\testCases\TC_080_WalidacjaTekstuKomentarza_ProductPage.java
-C:\Program Files\SelenAutoTestsTraining\LumaV1.1.0\src\test\java\testCases\TC_081_WalidacjaKomuniaktówTworzeniaKomentarza_ProductPage.java
+C:\Program Files\SelenAutoTestsTraining\LumaV1.1.0\src\test\java\testCases\TC_081_WalidacjaKomuniaktówTworzeniaKomentarza_ProductPage_TDD.java
 C:\Program Files\SelenAutoTestsTraining\LumaV1.1.0\src\test\java\testCases\TC_082_WalidacjaTworzeniaKomentarza_ProductPage.java
 C:\Program Files\SelenAutoTestsTraining\LumaV1.1.0\src\test\java\testCases\TC_083_WalidacjaLoga_MainPage.java
 C:\Program Files\SelenAutoTestsTraining\LumaV1.1.0\src\test\java\testCases\TC_084_WalidacjaWyświetlaniaLinkuAboutUs_FooterPage.java
@@ -177,7 +177,7 @@ C:\Program Files\SelenAutoTestsTraining\LumaV1.1.0\src\test\java\testCases\TC_12
 C:\Program Files\SelenAutoTestsTraining\LumaV1.1.0\src\test\java\testCases\TC_128_WalidacjaWyświetlaniaNagłówka_pressInquiries_contactPage.java
 C:\Program Files\SelenAutoTestsTraining\LumaV1.1.0\src\test\java\testCases\TC_129_WalidacjaWyświetlaniaNagłówka_WriteToUs_contactPage.java
 C:\Program Files\SelenAutoTestsTraining\LumaV1.1.0\src\test\java\testCases\TC_130_WalidacjaWyświetlaniaTekstu_LeaveMsg_contactPage.java
-C:\Program Files\SelenAutoTestsTraining\LumaV1.1.0\src\test\java\testCases\TC_131_WalidacjaWysyłaniaWiadomości_contactPage.java
+C:\Program Files\SelenAutoTestsTraining\LumaV1.1.0\src\test\java\testCases\TC_131_WalidacjaWysyłaniaWiadomości_contactPage_TDD.java
 C:\Program Files\SelenAutoTestsTraining\LumaV1.1.0\src\test\java\testCases\TC_132_WalidacjaLinkuZwrotyIZamowówienia_FooterPage.java
 C:\Program Files\SelenAutoTestsTraining\LumaV1.1.0\src\test\java\testCases\TC_133_WalidacjaWyświetlaniaTekstu_InfoBarPage.java
 C:\Program Files\SelenAutoTestsTraining\LumaV1.1.0\src\test\java\testCases\TC_134_WalidacjaTekstu_InfoBarPage.java
