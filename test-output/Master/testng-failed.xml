@@ -13,13 +13,125 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.TC_028_WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F">
+      <class name="testCases.TC_064_DodawanieProduktu_ProductPage_TDD">
         <methods>
+          <include name="DodawanieProduktu_KartaZProduktem_TDD" invocation-numbers="5 6 7"/>
           <include name="setUp"/>
-          <include name="WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F"/>
           <include name="close"/>
         </methods>
-      </class> <!-- testCases.TC_028_WalidacjaNazwyStrony_HoodiesAndSweatshirts_MainMenu_F -->
+      </class> <!-- testCases.TC_064_DodawanieProduktu_ProductPage_TDD -->
+      <class name="testCases.TC_024_WalidacjaNazwyStrony_Sale">
+        <methods>
+          <include name="WalidacjaNazwyStrony_Sale"/>
+          <include name="setUp"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- testCases.TC_024_WalidacjaNazwyStrony_Sale -->
+      <class name="testCases.TC_082_WalidacjaTworzeniaKomentarza_ProductPage">
+        <methods>
+          <include name="WalidacjaKomuniaktówTworzeniaKomentarza_ProductPage"/>
+          <include name="setUp"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- testCases.TC_082_WalidacjaTworzeniaKomentarza_ProductPage -->
+      <class name="testCases.TC_067_WalidacjaZakładkiWięcejInfo_PageProduct">
+        <methods>
+          <include name="setUp"/>
+          <include name="WalidacjaModułuWięcejInfo_PageProduct"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- testCases.TC_067_WalidacjaZakładkiWięcejInfo_PageProduct -->
+      <class name="testCases.TC_100_WalidacjaFunkcjonalności_Privacy_FooterPage">
+        <methods>
+          <include name="setUp"/>
+          <include name="WalidacjaFunkcjonalności_Privacy_FooterPage"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- testCases.TC_100_WalidacjaFunkcjonalności_Privacy_FooterPage -->
+      <class name="testCases.TC_138_WalidacjaMailBox_FooterPage_TDD">
+        <methods>
+          <include name="setUp"/>
+          <include name="WalidacjaMailBox_FooterPage" invocation-numbers="6"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- testCases.TC_138_WalidacjaMailBox_FooterPage_TDD -->
+      <class name="testCases.TC_186_WalidacjaKomunikatuOBrakuPrzedmiotówWLiścieŻyczeń_MyAccountPage">
+        <methods>
+          <include name="WalidacjaKomunikatuOBrakuPrzedmiotówWLiścieŻyczeń_MyAccountPage"/>
+          <include name="setUp"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- testCases.TC_186_WalidacjaKomunikatuOBrakuPrzedmiotówWLiścieŻyczeń_MyAccountPage -->
+      <class name="testCases.TC_098_WalidacjaFunkcjonalności_LinkuAboutUs_FooterPage">
+        <methods>
+          <include name="setUp"/>
+          <include name="WalidacjaFunkcjonalności_LinkuAboutUs_FooterPage"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- testCases.TC_098_WalidacjaFunkcjonalności_LinkuAboutUs_FooterPage -->
+      <class name="testCases.TC_206_WalidacjaOpcjiWKategoria_TopsPage_M">
+        <methods>
+          <include name="WalidacjaOpcjiWKategoria_TopsPage_M"/>
+          <include name="setUp"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- testCases.TC_206_WalidacjaOpcjiWKategoria_TopsPage_M -->
+      <class name="testCases.TC_139_WalidacjaFunkcjonalnościPrzyciskuZmianyJęzyka">
+        <methods>
+          <include name="setUp"/>
+          <include name="WalidacjaFunkcjonalnościPrzyciskuZmianyJęzyka"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- testCases.TC_139_WalidacjaFunkcjonalnościPrzyciskuZmianyJęzyka -->
+      <class name="testCases.TC_033_WalidacjaNazwyStrony_Tops_MainMenu_M">
+        <methods>
+          <include name="WalidacjaNazwyStrony_Tops_MainMenu_M"/>
+          <include name="setUp"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- testCases.TC_033_WalidacjaNazwyStrony_Tops_MainMenu_M -->
+      <class name="testCases.TC_121_WalidacjaFunkcjonalnościAdvanceSearch_TDD">
+        <methods>
+          <include name="WalidacjaFunkcjonalnościAdvanceSearch_TDD" invocation-numbers="12 13 14"/>
+          <include name="setUp"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- testCases.TC_121_WalidacjaFunkcjonalnościAdvanceSearch_TDD -->
+      <class name="testCases.TC_132_WalidacjaLinkuZwrotyIZamowówienia_FooterPage">
+        <methods>
+          <include name="setUp"/>
+          <include name="WalidacjaLinkuZwrotyIZamowówienia_FooterPage"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- testCases.TC_132_WalidacjaLinkuZwrotyIZamowówienia_FooterPage -->
+      <class name="testCases.TC_108_WalidacjaKlikalnonościLinkuPrivacyLuma_AboutUsPage">
+        <methods>
+          <include name="WalidacjaKlikalnonościLinkuPrivacyLuma_AboutUsPage"/>
+          <include name="setUp"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- testCases.TC_108_WalidacjaKlikalnonościLinkuPrivacyLuma_AboutUsPage -->
+      <class name="testCases.TC_002_WalidacjaNiepoprawnejRejestracji_TDD">
+        <methods>
+          <include name="setUp"/>
+          <include name="WalidacjaRejestracji_TDD" invocation-numbers="5 6 8 9 10"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- testCases.TC_002_WalidacjaNiepoprawnejRejestracji_TDD -->
+      <class name="testCases.TC_220_WalidacjaPoprawnegoEdytowaniaInformacjiKonta_MainAccountPage">
+        <methods>
+          <include name="setUp"/>
+          <include name="WalidacjaPoprawnegoEdytowaniaInformacjiKonta_MainAccountPage"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- testCases.TC_220_WalidacjaPoprawnegoEdytowaniaInformacjiKonta_MainAccountPage -->
+      <class name="testCases.TC_131_WalidacjaWysyłaniaWiadomości_contactPage_TDD">
+        <methods>
+          <include name="WalidacjaWysyłaniaWiadomości_contactPage_TDD" invocation-numbers="7 8 9 10 11"/>
+          <include name="setUp"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- testCases.TC_131_WalidacjaWysyłaniaWiadomości_contactPage_TDD -->
     </classes>
   </test> <!-- masterTest(failed) -->
 </suite> <!-- Failed suite [Master] -->

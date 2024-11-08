@@ -16,7 +16,7 @@
 		<class name="testCases.TC_001_WalidacjaPoprawnegoLogowania"/>
 		<class name="testCases.TC_002_WalidacjaNiepoprawnejRejestracji_TDD"/>
 		<class name="testCases.TC_003_WalidacjaPoprawnejRejestracji"/>
-		<class name="testCases.TC_004_WalidacjaLogowania_TDD"/>
+		<class name="testCases.TC_004_WalidacjaNiepoprawnegoLogowania_TDD"/>
 		<class name="testCases.TC_005_WalidacjaNazwyStronyWhatsNew"/>
 		<class name="testCases.TC_006_WalidacjaWyświetlaniaNazwyStrony_WhatsNew_NewInWomen"/>
 		<class name="testCases.TC_007_WalidacjaNazwyStrony_Hoodies_WhatsNew_F"/>
@@ -93,7 +93,7 @@
 	    <class name="testCases.TC_078_WalidacjaKlikalnościTekstDodajOpinie_ProductPage"/>
 	    <class name="testCases.TC_079_WalidacjaTekstuOpinieKlientów_ProductPage"/>
 		<class name="testCases.TC_080_WalidacjaTekstuKomentarza_ProductPage"/>
-		<class name="testCases.TC_081_WalidacjaKomuniaktówTworzeniaKomentarza_ProductPage"/>
+		<class name="testCases.TC_081_WalidacjaKomuniaktówTworzeniaKomentarza_ProductPage_TDD"/>
 		<class name="testCases.TC_082_WalidacjaTworzeniaKomentarza_ProductPage"/>
 		<class name="testCases.TC_083_WalidacjaLoga_MainPage"/>
 		<class name="testCases.TC_084_WalidacjaWyświetlaniaLinkuAboutUs_FooterPage"/>
@@ -143,7 +143,7 @@
 	    <class name="testCases.TC_128_WalidacjaWyświetlaniaNagłówka_pressInquiries_contactPage"/>
 	    <class name="testCases.TC_129_WalidacjaWyświetlaniaNagłówka_WriteToUs_contactPage"/>
 	    <class name="testCases.TC_130_WalidacjaWyświetlaniaTekstu_LeaveMsg_contactPage"/>
-	    <class name="testCases.TC_131_WalidacjaWysyłaniaWiadomości_contactPage"/>
+	    <class name="testCases.TC_131_WalidacjaWysyłaniaWiadomości_contactPage_TDD"/>
 		<class name="testCases.TC_132_WalidacjaLinkuZwrotyIZamowówienia_FooterPage"/>
 		<class name="testCases.TC_133_WalidacjaWyświetlaniaTekstu_InfoBarPage"/>
 		<class name="testCases.TC_134_WalidacjaTekstu_InfoBarPage"/>
@@ -242,7 +242,7 @@
 		<class name="testCases.TC_001_WalidacjaPoprawnegoLogowania"/>
 		<class name="testCases.TC_002_WalidacjaNiepoprawnejRejestracji_TDD"/>
 		<class name="testCases.TC_003_WalidacjaPoprawnejRejestracji"/>
-		<class name="testCases.TC_004_WalidacjaLogowania_TDD"/>
+		<class name="testCases.TC_004_WalidacjaNiepoprawnegoLogowania_TDD"/>
 		<class name="testCases.TC_005_WalidacjaNazwyStronyWhatsNew"/>
 		<class name="testCases.TC_006_WalidacjaWyświetlaniaNazwyStrony_WhatsNew_NewInWomen"/>
 		<class name="testCases.TC_007_WalidacjaNazwyStrony_Hoodies_WhatsNew_F"/>
@@ -319,7 +319,7 @@
 	    <class name="testCases.TC_078_WalidacjaKlikalnościTekstDodajOpinie_ProductPage"/>
 	    <class name="testCases.TC_079_WalidacjaTekstuOpinieKlientów_ProductPage"/>
 		<class name="testCases.TC_080_WalidacjaTekstuKomentarza_ProductPage"/>
-		<class name="testCases.TC_081_WalidacjaKomuniaktówTworzeniaKomentarza_ProductPage"/>
+		<class name="testCases.TC_081_WalidacjaKomuniaktówTworzeniaKomentarza_ProductPage_TDD"/>
 		<class name="testCases.TC_082_WalidacjaTworzeniaKomentarza_ProductPage"/>
 		<class name="testCases.TC_083_WalidacjaLoga_MainPage"/>
 		<class name="testCases.TC_084_WalidacjaWyświetlaniaLinkuAboutUs_FooterPage"/>
@@ -369,7 +369,7 @@
 	    <class name="testCases.TC_128_WalidacjaWyświetlaniaNagłówka_pressInquiries_contactPage"/>
 	    <class name="testCases.TC_129_WalidacjaWyświetlaniaNagłówka_WriteToUs_contactPage"/>
 	    <class name="testCases.TC_130_WalidacjaWyświetlaniaTekstu_LeaveMsg_contactPage"/>
-	    <class name="testCases.TC_131_WalidacjaWysyłaniaWiadomości_contactPage"/>
+	    <class name="testCases.TC_131_WalidacjaWysyłaniaWiadomości_contactPage_TDD"/>
 		<class name="testCases.TC_132_WalidacjaLinkuZwrotyIZamowówienia_FooterPage"/>
 		<class name="testCases.TC_133_WalidacjaWyświetlaniaTekstu_InfoBarPage"/>
 		<class name="testCases.TC_134_WalidacjaTekstu_InfoBarPage"/>
@@ -465,10 +465,10 @@
     <test  name="firefoxTest" >
 	<parameter name="browser" value="firefox"></parameter>
 	<classes>
-		<class name="testCases.TC_001_WalidacjaPoprawnegoLogowania"/>
+	<class name="testCases.TC_001_WalidacjaPoprawnegoLogowania"/>
 		<class name="testCases.TC_002_WalidacjaNiepoprawnejRejestracji_TDD"/>
 		<class name="testCases.TC_003_WalidacjaPoprawnejRejestracji"/>
-		<class name="testCases.TC_004_WalidacjaLogowania_TDD"/>
+		<class name="testCases.TC_004_WalidacjaNiepoprawnegoLogowania_TDD"/>
 		<class name="testCases.TC_005_WalidacjaNazwyStronyWhatsNew"/>
 		<class name="testCases.TC_006_WalidacjaWyświetlaniaNazwyStrony_WhatsNew_NewInWomen"/>
 		<class name="testCases.TC_007_WalidacjaNazwyStrony_Hoodies_WhatsNew_F"/>
@@ -545,7 +545,7 @@
 	    <class name="testCases.TC_078_WalidacjaKlikalnościTekstDodajOpinie_ProductPage"/>
 	    <class name="testCases.TC_079_WalidacjaTekstuOpinieKlientów_ProductPage"/>
 		<class name="testCases.TC_080_WalidacjaTekstuKomentarza_ProductPage"/>
-		<class name="testCases.TC_081_WalidacjaKomuniaktówTworzeniaKomentarza_ProductPage"/>
+		<class name="testCases.TC_081_WalidacjaKomuniaktówTworzeniaKomentarza_ProductPage_TDD"/>
 		<class name="testCases.TC_082_WalidacjaTworzeniaKomentarza_ProductPage"/>
 		<class name="testCases.TC_083_WalidacjaLoga_MainPage"/>
 		<class name="testCases.TC_084_WalidacjaWyświetlaniaLinkuAboutUs_FooterPage"/>
@@ -595,7 +595,7 @@
 	    <class name="testCases.TC_128_WalidacjaWyświetlaniaNagłówka_pressInquiries_contactPage"/>
 	    <class name="testCases.TC_129_WalidacjaWyświetlaniaNagłówka_WriteToUs_contactPage"/>
 	    <class name="testCases.TC_130_WalidacjaWyświetlaniaTekstu_LeaveMsg_contactPage"/>
-	    <class name="testCases.TC_131_WalidacjaWysyłaniaWiadomości_contactPage"/>
+	    <class name="testCases.TC_131_WalidacjaWysyłaniaWiadomości_contactPage_TDD"/>
 		<class name="testCases.TC_132_WalidacjaLinkuZwrotyIZamowówienia_FooterPage"/>
 		<class name="testCases.TC_133_WalidacjaWyświetlaniaTekstu_InfoBarPage"/>
 		<class name="testCases.TC_134_WalidacjaTekstu_InfoBarPage"/>

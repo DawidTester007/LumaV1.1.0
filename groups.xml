@@ -27,7 +27,7 @@
 		<class name="testCases.TC_001_WalidacjaPoprawnegoLogowania"/>
 		<class name="testCases.TC_002_WalidacjaNiepoprawnejRejestracji_TDD"/>
 		<class name="testCases.TC_003_WalidacjaPoprawnejRejestracji"/>
-		<class name="testCases.TC_004_WalidacjaLogowania_TDD"/>
+		<class name="testCases.TC_004_WalidacjaNiepoprawnegoLogowania_TDD"/>
 		<class name="testCases.TC_005_WalidacjaNazwyStronyWhatsNew"/>
 		<class name="testCases.TC_006_WalidacjaWyświetlaniaNazwyStrony_WhatsNew_NewInWomen"/>
 		<class name="testCases.TC_007_WalidacjaNazwyStrony_Hoodies_WhatsNew_F"/>
@@ -242,7 +242,7 @@
 		<class name="testCases.TC_216_WalidacjaOpcjiWClimate_TopsPage_M"/>
 		<class name="testCases.TC_217_WalidacjaOpcjiWKolorach_TopsPage_M"/>
 		<class name="testCases.TC_218_WalidacjaOpcjiWRozmiar_TopsPage_M"/>
-	    <!--<class name="testCases.TC_219_WalidacjaZakładkiEdytujInformacjeKontaTDD_MainAccountPage"/>-->
+	    <class name="testCases.TC_219_WalidacjaZakładkiEdytujInformacjeKontaTDD_MainAccountPage"/>
 	    <class name="testCases.TC_220_WalidacjaPoprawnegoEdytowaniaInformacjiKonta_MainAccountPage"/>
 	    
     </classes>

@@ -8,7 +8,7 @@ import pages.LoginPage;
 import pages.MainPage;
 import utilities.DataProv;
 
-public class TC_004_WalidacjaLogowania_TDD extends BaseTest {
+public class TC_004_WalidacjaNiepoprawnegoLogowania_TDD extends BaseTest {
 
 	@Test (dataProvider = "DataLogin" , dataProviderClass = DataProv.class , groups ={"dataDriver","master"})
 	public void WalidacjaLogowania_TDD(String email , String pwd , String res) {
