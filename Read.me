@@ -36,8 +36,12 @@ Automatyzacja testów pozwala na szybkie i efektywne wykrywanie błędów w opro
 
 Jak uruchomić projekt ?
 
+Wymogi:
+Zainstalowane oprogramowanie maven pod adresem: https://maven.apache.org/download.cgi o nazwie Binary zip archive
+Zainstalowane jdk 23 pod adresem : https://download.oracle.com/java/23/latest/jdk-23_windows-x64_bin.exe
+I dodanie ich ścieżek do zmiennego środowiska windows.
+
 Aby uruchomić projekt należy go pobrać i rozpakować, następnie aby uruchomić testy należy uruchomić plik : "run.bat".
-W celu poprawnego uruchomienia testów należy pobrać plik maven, który umożliwi wykonanie komendy, która jest zawarta w pliku "run.bat"
 Po uruchomieniu pliku run.bat zostaną wykonane przypadki testowe, niektóre zostaną uruchomione kilku krotnie ponieważ będą pobierać dane z różnymi kombinacjami danych z pliku DataForLuma.xml
 
 W przypadku, niechęci uruchomienia wszystkich przypadków testowych można uruchomić tylko przypadki testowe, które należą do poszczególnych grup takich jak:
@@ -81,8 +85,6 @@ Aby uruchomić testy na wszystkich z wyżej wymienionych przeglądarkach należy
 
 Oczekiwane rezultaty:
 Uruchomienie wszystkich zawartych testów w pliku crossBrowser.xml na trzech przeglądarkach
-
-Uwaga: Uruchomienie testów na słabym sprzęcie może spowodować niepoprawne działanie testów
 
 Jak mogę zobaczyć szczegóły wykonywanych testów ?
 

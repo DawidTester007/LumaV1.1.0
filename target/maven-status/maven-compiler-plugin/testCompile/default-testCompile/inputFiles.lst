@@ -50,7 +50,7 @@ C:\Program Files\SelenAutoTestsTraining\LumaV1.1.0\src\test\java\pages\YogaPage.
 C:\Program Files\SelenAutoTestsTraining\LumaV1.1.0\src\test\java\testCases\TC_001_WalidacjaPoprawnegoLogowania.java
 C:\Program Files\SelenAutoTestsTraining\LumaV1.1.0\src\test\java\testCases\TC_002_WalidacjaNiepoprawnejRejestracji_TDD.java
 C:\Program Files\SelenAutoTestsTraining\LumaV1.1.0\src\test\java\testCases\TC_003_WalidacjaPoprawnejRejestracji.java
-C:\Program Files\SelenAutoTestsTraining\LumaV1.1.0\src\test\java\testCases\TC_004_WalidacjaLogowania_TDD.java
+C:\Program Files\SelenAutoTestsTraining\LumaV1.1.0\src\test\java\testCases\TC_004_WalidacjaNiepoprawnegoLogowania_TDD.java
 C:\Program Files\SelenAutoTestsTraining\LumaV1.1.0\src\test\java\testCases\TC_005_WalidacjaNazwyStronyWhatsNew.java
 C:\Program Files\SelenAutoTestsTraining\LumaV1.1.0\src\test\java\testCases\TC_006_WalidacjaWyświetlaniaNazwyStrony_WhatsNew_NewInWomen.java
 C:\Program Files\SelenAutoTestsTraining\LumaV1.1.0\src\test\java\testCases\TC_007_WalidacjaNazwyStrony_Hoodies_WhatsNew_F.java
