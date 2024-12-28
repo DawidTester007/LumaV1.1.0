@@ -1,107 +1,129 @@
-Projekt automatyzacji LumaV1.1.0
-
-Czego dotyczy:
-Strona pod adresem **https://demo-magento-2.auroracreation.com** to demonstracyjna wersja sklepu internetowego opartego na platformie **Magento 2**.  Została stworzona przez firmę **Aurora Creation**, która specjalizuje się w wdrażaniu, migracji i obsłudze platformy Magento.  Na stronie możesz zobaczyć przykładowe funkcje sklepu, takie jak dodawanie produktów do koszyka, przeglądanie kategorii, a także korzystanie z różnych narzędzi do zarządzania sklepem.  Strona ta ma na celu zaprezentowanie możliwości platformy Magento 2 i zachęcenie potencjalnych klientów do skorzystania z usług firmy Aurora Creation.
-
-Najważniejsze lokalizacje:
-Kod wykonujący przypadki testowe znajduję się w " \LumaV1.1.0\src\test\java\testCases
-Wszystkie logi(czynności wykonane przez sterownik) są generowane w : \LumaV1.1.0\logs
-Raporty z testów generowane są w: \LumaV1.1.0\reports
-Screenshoty z testów generowane są w  \LumaV1.1.0\screenshots
-Dane testowe wykorzystywane w testach oznaczonymi skrótami TDD : \LumaV1.1.0\testData\DataForLuma.xlsx
-
-Wyjaśnienie składni nazw przypadków testowych:
-TC_016_WalidacjaNazwyStrony_Tees_WhatsNew_M --> 
-TC : skrót testcase
-016 : numer testu/ identyfikator
-WalidacjaNazwyStrony : główne zadanie testu
-Tees_WhatsNew : Zakładka w której znajduję się test
-M : Dotyczą męskiego działy
-F : Dotyczą żeńskiego działu
+Automation Project: LumaV1.1.0
 
 
+1)
+What it is about:
+The website at **https://demo-magento-2.auroracreation.com** is a demo version of an online store based on the **Magento 2** platform.  It was created by **Aurora Creation**, a company that specializes in the implementation, migration and support of the Magento platform.  On the site, you can see sample store functions, such as adding products to a shopping cart, browsing categories, as well as using various store management tools.  The site is designed to demonstrate the capabilities of the Magento 2 platform and encourage potential customers to use Aurora Creation's services.
+
+2)
+Key locations:
+The code that executes the test cases can be found in  \LumaV1.1.0 Test Cases.
+All logs(actions performed by the driver) are generated in : \ LumaV1.1.0\logs.
+Test reports are generated in: \LumaV1.1.0\reports.
+Screenshots of the tests are generated in : \LumaV1.1.0\screenshots
+Test data used in the tests denoted by the acronyms TDD : \LumaV1.1.0\testDataForLuma.xlsx.
+
+3)
+Explanation of the syntax of the test case names:
+TC_016_ValidationTestCases_Tees_WhatsNew_M -->. 
+*TC : testcase abbreviation
+*016 : test number/identifier
+*ValidationNamePage : the main task of the test.
+*Tees_WhatsNew : the tab where the test is located
+*M : pertaining to the male section
+*F : pertaining to the female section
 
 
-Jaki jest cel projektu ?
+4)
+What is the purpose of the project ?
 
-Celem projektu jest automatyzacja testów funkcjonalnych dla strony internetowej https://demo-magento-2.auroracreation.com. Projekt ten obejmuje 220 testów przypadków, które mogą być uruchamiana na przeglądarkach takich jak: edge, chrome, firefox, które mają na celu weryfikację poprawności działania kluczowych funkcji strony w różnych środowiskach:
+The goal of the project is to automate functional tests for the https://demo-magento-2.auroracreation.com website. This project includes 220 case tests that can be run on browsers such as edge, chrome, firefox to verify that key features of the website work correctly in different environments:
 
-Dodawanie produktów do koszyka
-Przeglądanie kategorii
-Rejestracja i logowanie
-Proces zamawiania
-Obsługa klienta i wiele wiele innych funkcji.
 
-Automatyzacja testów pozwala na szybkie i efektywne wykrywanie błędów w oprogramowaniu oraz generowanie przejrzystych raportów dotyczących wyników testu, co z kolei skraca czas rozwoju i poprawia jakość strony internetowej. Dodatkowo, regularne uruchamianie testów automatycznych zapewnia ciągłe monitorowanie stabilności i funkcjonalności strony.
+5)
+How to run the project ?
 
-Jak uruchomić projekt ?
+Requirements:
+Installed maven software at: https://maven.apache.org/download.cgi named Binary zip archive
+Installed jdk 23 at : https://download.oracle.com/java/23/latest/jdk-23_windows-x64_bin.exe
+And add their paths to the variable windows environment.
 
-Wymogi:
-Zainstalowane oprogramowanie maven pod adresem: https://maven.apache.org/download.cgi o nazwie Binary zip archive
-Zainstalowane jdk 23 pod adresem : https://download.oracle.com/java/23/latest/jdk-23_windows-x64_bin.exe
-I dodanie ich ścieżek do zmiennego środowiska windows.
+To run the project you need to download and unzip it, then to run the tests you need to run the file : “run.bat”.
+After running the run.bat file, the test cases will be executed, some will be run several times because they will retrieve data with different combinations of data from the DataForLuma.xml file
 
-Aby uruchomić projekt należy go pobrać i rozpakować, następnie aby uruchomić testy należy uruchomić plik : "run.bat".
-Po uruchomieniu pliku run.bat zostaną wykonane przypadki testowe, niektóre zostaną uruchomione kilku krotnie ponieważ będą pobierać dane z różnymi kombinacjami danych z pliku DataForLuma.xml
+In case, you are reluctant to run all test cases, you can only run test cases that belong to particular groups such as:
+groups ={“functional”, “regression”, “sanity”, “master”, “dataDriver”}
 
-W przypadku, niechęci uruchomienia wszystkich przypadków testowych można uruchomić tylko przypadki testowe, które należą do poszczególnych grup takich jak:
-groups ={"functional","regression","sanity","master","dataDriver"}
+A) 
+Steps to run individual group of tests:
 
-Kroki do uruchomienia poszczególnych testów:
+A.1.Open the pom.xml file
+A.2.Locate the instruction:
+<suiteXmlFiles>.	
+	<suiteXmlFile>master.xml</suiteXmlFile>.
+</suiteXmlFiles>.
+A.3.Rename the file instead of : master.xml to groups.xml
+A.4.Open the groups.xml file
+A.5.Locate Tag groups --> run --> include
+A.6.Remove the comment from the group you want to run
+A.7.Save the file
+A.8.Run the run.bat file
 
-1.Uruchom plik pom.xml
-2.Zlokalizuj instrukcję:
-<suiteXmlFiles>	
-	<suiteXmlFile>master.xml</suiteXmlFile>
+Expected results:
+Run the tests belonging to the selected group
+
+
+B) 
+Running Tests on Different Browsers
+This project supports testing on three browsers: Microsoft Edge, Chrome, and Firefox. To run tests on a specific browser, you'll need to modify the browser parameter within the master.xml and groups.xml files.
+
+B.1.Locate the browser parameter:
+
+Within the <parameter> tag, find the following line:
+
+<parameter name="browser" value="chrome"/> 
+B.2.Change the browser value:
+
+Replace the value "chrome" with the desired browser:
+
+Edge: <parameter name="browser" value="edge"/>
+Chrome: <parameter name="browser" value="chrome"/>
+Firefox: <parameter name="browser" value="firefox"/>
+B.3.Save the changes and run the tests:
+
+Save the modified master.xml or groups.xml file, and then run the run.bat file to execute the tests on the chosen browser.
+
+C)
+Running Tests on All Three Browsers at Once
+To run tests on all three browsers simultaneously, follow these steps:
+
+C.1.Modify the pom.xml file:
+
+Locate the following section within the pom.xml file:
+
+<suiteXmlFiles>
+    <suiteXmlFile>master.xml</suiteXmlFile>
 </suiteXmlFiles>
-3.Zmień nazwę pliku zamiast : master.xml na groups.xml
-4.Otwórz plik groups.xml
-5.Zlokalizuj Tag groups --> run --> include
-6.Usuń komentarz z grupy, którą chcesz uruchomić
-7.Zapisz plik
-8.Uruchom plik run.bat
+C.2.Rename the file:
 
-Oczekiwane rezultaty:
-Uruchomienie testów należących do wybranej grupy
+Rename the file <suiteXmlFile>master.xml</suiteXmlFile> to <suiteXmlFile>crossBrowser.xml</suiteXmlFile>. This file is specifically designed for running tests on all three browsers.
 
-Jak uruchomić projekt na różnych przeglądarkach ?
- 
-Dostępne są trzy przeglądarki : Microsoft Edge, chrome, firefox
- 
-Plik master.xml oraz groups.xml zawierają parametr : <parameter name="browser" value = "chrome"/>
-Aby uruchomić plik na wybranej z trzech przeglądarek należy w "value" wprowadzić jedną z trzech wartości:
-edge, chrome, firefox. Każda inna wartość zostanie odrzucona i wyświetli się komunikat: "Wprowadzono złą wartość przeglądarki"
+C.3. Save the changes and run the tests:
 
-Jak uruchomić testy na trzech przeglądarkach jednocześnie?
-Aby uruchomić testy na wszystkich z wyżej wymienionych przeglądarkach należy:
-1.Otworzyć plik pom.xml
-2.Zlokalizuj instrukcję:
-<suiteXmlFiles>	
-	<suiteXmlFile>master.xml</suiteXmlFile>
-</suiteXmlFiles>
-3.Zmień nazwę pliku zamiast : master.xml na crossBrowser.xml
-4.Zapisz zmiany
-5.Uruchom plik run.bat
+Save the modified pom.xml file, and then run the run.bat file to execute the tests on all three browsers.
 
-Oczekiwane rezultaty:
-Uruchomienie wszystkich zawartych testów w pliku crossBrowser.xml na trzech przeglądarkach
 
-Jak mogę zobaczyć szczegóły wykonywanych testów ?
+6)
+How can I see the details of the tests performed ?
 
-W lokalizacji : LumaV1.1.0\src\test\java\testCases znajdują się wszystkie przypadki testowe. 
-Po otworzeniu pliku np: TC_016_WalidacjaNazwyStrony_Tees_WhatsNew_M.java zostanie wyświetlony kod źródłowy testu.
+In the location : LumaV1.1.0\src\test\java\testCases there are all the test cases. 
+When you open the file, for example : TC_016_ValidationTees_WhatsNew_M.java, the source code of the test will be displayed.
 
-W jaki sposób mogę przejrzeć wykonane kroki testowe ?
+7)
+How can I review the executed test steps ?
 
-Za każdym razem gdy zostaną uruchomione testy będą generowane czynności, które zostały wykonane na stronie. Będą one zapisywane w lokalizacji: 
+Each time the tests are run, the steps that have been executed on the page will be generated. They will be saved in the location: 
 LumaV1.1.0\logs
 
-Jak przejrzeć raporty wykonanych testów ?
-Wszystkie raporty będą generowane wraz z screenchotami w lokalizacji:\LumaV1.1.0\reports w formacie html
-Wszystkie screenshoty będą generowane w lokalizacji : LumaV1.1.0\screenshots w formacie png
+8)
+How to view the reports of the executed tests ?
+All reports will be generated along with screenshots in location:LumaV1.1.0\reports in html format.
+All screenshots will be generated in location : LumaV1.1.0\screenshots in png format
 
-Środowisko w którym powstawał projekt :
-Eclipse, Język java, Selenium WebDriver, TestNg, Program Maven, Udostępniony za pomocą git na platformę github, chrome, firefox, edge, Windows 11
+9)Environment in which the project was created :
+Eclipse, java language, Selenium WebDriver, TestNg, Maven program, Shared via git on github platform, chrome, firefox, edge, Windows 11
+
+
 
 
 
