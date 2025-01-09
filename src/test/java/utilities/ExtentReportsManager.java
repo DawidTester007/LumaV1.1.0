@@ -55,7 +55,7 @@ public class ExtentReportsManager implements ITestListener{
 		 
 	   //Ustalenie podstawowych informacji raportu i dodanie grup, które wchodzą w skład
 	   //Testów
-		 Reporter.setSystemInfo("Obiekt Testów", "LumaDemo");
+		 Reporter.setSystemInfo("Test Object:", "LumaDemo");
 		 Reporter.setSystemInfo("Creator", System.getProperty("user.name"));
 		 Reporter.setSystemInfo("Environment", "QA");
 		 Reporter.setSystemInfo("Browser", context.getCurrentXmlTest().getParameter("browser"));
@@ -83,7 +83,7 @@ public class ExtentReportsManager implements ITestListener{
 		 	Test.assignCategory(result.getMethod().getGroups());
 		 	
 		  //Wyświetlenie statusu i komunikatu
-		    Test.log(Status.PASS, "Test "+result.getName() + " zakończył się pozytywnie");
+		    Test.log(Status.PASS, "Test "+result.getName() + " finished positive");
 		
 		  }
 	 
@@ -94,10 +94,10 @@ public class ExtentReportsManager implements ITestListener{
 		    Test.assignCategory(result.getMethod().getGroups());
 		    
 		  //Wyświetlenie statusu i komunikatu
-		    Test.log(Status.FAIL, "Test "+result.getName()+ " zakończył się niepowodzeniem");
+		    Test.log(Status.FAIL, "Test "+result.getName()+ " finished negative");
 		    
 		  //Wyświetlenie statusu i komunikatu wraz z wyjątkiem
-		    Test.log(Status.INFO , "Test zakończył się niepowodzeniem z powodu: " + result.getThrowable());
+		    Test.log(Status.INFO , "Test finished negative because: " + result.getThrowable());
 		    
 		  //Wywołanie metody wykonującej screenshot i dostarczający path do screena
 		    String path = new BaseTest().captureScreen(result.getName());
@@ -115,10 +115,10 @@ public class ExtentReportsManager implements ITestListener{
 		    Test.assignCategory(result.getMethod().getGroups());
 		    
 		  //Wyświetlenie statusu i komunikatu
-		    Test.log(Status.SKIP, "Test " + result.getName() + " został pominięty");
+		    Test.log(Status.SKIP, "Test " + result.getName() + " was skipped");
 		    
 		  //Wyświetlenie statusu i komunikatu wraz z wyjątkiem
-		    Test.log(Status.INFO , "Test został pominięty z powodu :" + result.getThrowable());
+		    Test.log(Status.INFO , "Test was skipped because :" + result.getThrowable());
 		  }
 	 
 

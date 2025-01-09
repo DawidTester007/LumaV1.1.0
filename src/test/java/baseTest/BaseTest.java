@@ -39,101 +39,102 @@ public class BaseTest {
 	@Parameters({"system","browser"})
 	public void setUp(String system , String browser) throws IOException {
 		
-	  //Stworzenie loggera dla tej klasy
+	  //Create a logger for this class
 		logger = LogManager.getLogger(this.getClass()); 
 		
-	  //Określenie scieżki do pliku properties, w celu odczytywania danych
+	  //Determine a path for properties file
 		FileInputStream file = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\prop.properties");
 		
-	  //Stworzenie obiektu properties
+	  //Create the properties obcject
 		prop = new Properties();
 		
-	  //Załadowanie pliku properties aby zmienna mogła odczytywać dane
+	  //Load the file to the prop object
 		prop.load(file);
 		
 		if(prop.getProperty("env_execution").toLowerCase().equalsIgnoreCase("local")) {
 			
-		  //Decyzja typu switch, wybranie typu przeglądarki
+		  //Switch decision: choose a browser
 			switch(browser.toLowerCase()) {
 			
 			case "chrome": driver = new ChromeDriver();break;
 			case "edge": driver = new EdgeDriver();break;
 			case "firefox": driver = new FirefoxDriver();break;
-			default : System.out.println("Wprowadzono złą wartość przeglądarki")
+			default : System.out.println("The wrong browser value has been entered")
 		  //return: zapobiega wykonaniu reszty kodu
 			;return;
 			}
 		}
-	  //Stworzenie obiektu WebDriverWait 
+	  //Create WebDriver object 
 		DriverWait = new WebDriverWait(driver , Duration.ofSeconds(4));
 		
-	  //Przypisanie do zmiennej js przekonwertowanego sterownika
+	  //Convert object driver to JavascriptExecutor variable and assign to js
 		js = (JavascriptExecutor) driver;
 		
-	  //Usunięcie zapisanych danych
+	  //Delete saved coockies
 		driver.manage().deleteAllCookies();
 		
-	  //Powiększenie strony
+	  //Magnify Website
 		driver.manage().window().maximize();
 		
-	  //Ukryty licznik, którego długość wynosi 10s
+	  //Calling implicityWait method with specified duration
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		
-	  //Pobranie adresu z pliku properties
+	  //Open link from properties file
 		driver.get(prop.getProperty("addresUrl"));
 		
-		logger.info("****Uruchomiono stronę główną 'Luma'****");
+		logger.info("****The Luma website has been launched****");
 		
 	}
 	
 	@AfterMethod(groups ={"functional","regression","sanity","master","dataDriver"})
 	public void close() {
 		
-	  //zamknięcie strony
+	  //Close Website
 		driver.close();
 
 	}
 	
 	public void  LoginToVeronicaAccount() throws InterruptedException {
 		
-	  //Stworzenie obiektu MainPage
+	  //Create MainPage object
 		MainPage Mp = new MainPage(driver);
 		
-	  //Wywołanie metody z MainPage
+	  //Calling click login button method
+		logger.info("****Button login has been clicked****");
 		Mp.click_btnZaloguj();
 		
-	  //Wywołanie metody z LoginPage
-		logger.info("****Kliknięto przycisk zaloguj się****");
+	  //Create LoginPage object
+		logger.info("****Login in button has been clicked****");
 		LoginPage Lp = new LoginPage(driver);
 		
-	  //Wysałenie inforamcji email, password do pól
+	  //Sending email and password because of methods from LoginPage Object
 		Lp.send_DataEmail(prop.getProperty("email"));
 		Lp.send_DataPwd(prop.getProperty("pwd"));
 		
-	  //Wywołanie metody z LoginPage
-		logger.info("****Wprowadzono email i hasło****");
+	  //Calling click login button method in LoginPage
+		logger.info("****Email and password entered****");
 		Lp.click_btn_Zaloguj();
 		
-	  //Wywołanie metody z MainPage
-		logger.info("****Kliknięto przycisk zaloguj****");
+	  //Calling click my account button method in MainPage
+		logger.info("****The login button was clicked****");
 		Mp.click_btn_mojeKonto();
 		
-		logger.info("****Kliknięto przycisk 'Moje konto'****");
+		logger.info("****The 'My Account' button was clicked****");
 		
 	}
-//Metoda stworzona w celu tworzenia randomowych liter, które zaczynają się z dużej litery
+//This method create random string with first upper letter
 	public static String randomString() {
 		
 		return RandomStringUtils.randomAlphabetic(1).toUpperCase()+RandomStringUtils.randomAlphabetic(6);
 		
 	}
-//Metoda stworzona w celu tworzenia randomowych cyfr
+//This method create random digit of length 9 
 	public static String randomNumber() {
 		
 		return RandomStringUtils.randomNumeric(9);
 		
 	}
-//Metoda stworzona w celu tworzenia randomowych liter i cyfr
+//This method call 2 upper methods in one time
 	public static String stringMix() {
 		
 		
@@ -142,27 +143,27 @@ public class BaseTest {
 	}
 	
 	public String captureScreen(String tName) {
-	  //Stworzenie obiektu SimpleDateFormat i ustalenie formatu preferowanej daty
+	  //Create object SimpleDataFormat and set up format of date
 	  //Wywołanie metody format który zwraca wartość typu String i potrzebuje obiekty Date
 		String Sdf = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 		
-	  //Przekonwertowanie sterownika na TakesScreenshot i przypisanie jej do zmiennej ts
+	  //Covert driver to TakesScreenshot variable
 		TakesScreenshot  ts = (TakesScreenshot ) driver;
 		
-	  //Zrobienie screenshota i zapisanie go jako plik
+	  //Do screenshots and save as OutputFile
 		File screen = ts.getScreenshotAs(OutputType.FILE);
 		
-	  //Dynamiczne tworzenie nazwy aby się nie powtarzały
+	  //Creating a dynamic file name with date
 		String targetFilePath = System.getProperty("user.dir") + "\\screenshots\\"+ tName+"_"+Sdf+".png";
 		
 		
-	  //Tworzenie pliku o dynamicznej nazwie
+	  //Create file with dynamic name
 		File filePath = new File(targetFilePath);
 		
-	  //Przypisanie screenshota do pliku :filePath
+	  //Assign a screenshot to dynamic file
 		screen.renameTo(filePath);
 		
-	  //Zwrócenie dynamicznej nazwy
+	  //Return a file name
 		return targetFilePath;
 		
 		

@@ -41,7 +41,7 @@ public class MainMenuPage extends PageBase {
 	@FindBy(xpath="//a[@id='ui-id-9']//span[contains(text(),'Bottoms')]")
 	WebElement subCat_Women_Bottom;
 	
-	@FindBy(xpath="//a[@id='ui-id-14']")
+	@FindBy(xpath="//a[@id='ui-id-13']")
 	WebElement subCat_Men_Tops;
 
 	@FindBy(xpath="//a[@id='ui-id-18']//span[contains(text(),'Bottoms')]")

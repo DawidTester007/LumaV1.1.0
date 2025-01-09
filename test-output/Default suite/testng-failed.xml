@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TC_219_WalidacjaZakładkiEdytujInformacjeKontaTDD_MainAccountPage">
+      <class name="testCases.TC_206_ValidationOfFunctionalitySortByCategory_TopsPage_M">
         <methods>
+          <include name="ValidationOfFunctionalitySortByCategory_TopsPage_M"/>
           <include name="setUp"/>
-          <include name="WalidacjaZakładkiEdytujInformacjeKontaTDD_MainAccountPage"/>
           <include name="close"/>
         </methods>
-      </class> <!-- testCases.TC_219_WalidacjaZakładkiEdytujInformacjeKontaTDD_MainAccountPage -->
+      </class> <!-- testCases.TC_206_ValidationOfFunctionalitySortByCategory_TopsPage_M -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

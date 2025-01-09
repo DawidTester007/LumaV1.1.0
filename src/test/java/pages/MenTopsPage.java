@@ -87,8 +87,9 @@ public class MenTopsPage extends PageBase {
 	WebElement btn_clearOption;
 	
 	public void click_btn_clearOption() {
+		wait = new WebDriverWait(driver , Duration.ofSeconds(4));
+		wait.until(ExpectedConditions.visibilityOf(btn_clearOption)).click();
 		
-		btn_clearOption.click();
 	}
 	
 	public boolean check_txt_communicateOfAddedOption() {
@@ -116,8 +117,9 @@ public class MenTopsPage extends PageBase {
 	}
 
 	public void click_optionShopping_category() {
+		wait = new WebDriverWait(driver , Duration.ofSeconds(4));
+		wait.until(ExpectedConditions.visibilityOf(optionShopping_category)).click();
 		
-		js.executeScript("arguments[0].click()", optionShopping_category);
 	}
 	
 	public void click_optionShopping_style() throws InterruptedException {
@@ -175,9 +177,13 @@ public class MenTopsPage extends PageBase {
 		optionShopping_pattern.click();
 	}
 	
-	public void click_optionShopping_climate() {
+	public void click_optionShopping_climate() throws InterruptedException {
+		js = (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].scrollIntoView()", optionShopping_climate);
+		js.executeScript("window.scrollBy(0,-400)");
+		wait = new WebDriverWait(driver, Duration.ofSeconds(4));
+		wait.until(ExpectedConditions.visibilityOf(optionShopping_climate)).click();
 		
-		optionShopping_climate.click();
 	}
 	
 	public WebElement get_select_sorter() {
