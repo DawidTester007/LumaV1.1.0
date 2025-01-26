@@ -23,7 +23,7 @@
 
     <Root level="Info"> <!-- Ustanawiasz poziom na którym chcesz generowac log jak : Trace, Debug, Info , Warn , Error, Fatal-->
     <!--<AppenderRef ref="Console"/> -->
-      <AppenderRef ref="Console"/>
+      <AppenderRef ref="File"/>
     </Root>
   </Loggers>
 </Configuration>
